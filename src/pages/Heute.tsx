@@ -1,3 +1,5 @@
+import DeepSeekChat from "../components/DeepSeekChat";
+
 const Heute = () => {
   return (
     <div>
@@ -20,6 +22,7 @@ AI-Nutri analysiert deine tägliche Ernährung und zeigt dir, welche Vitamine fe
 
      </div>
       <h1>Heute</h1>
+      <DeepSeekChat />
 
     </div>
 

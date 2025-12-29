@@ -47,8 +47,6 @@ export default function HeroBild() {
 
   return (
     <div className="container">
-      <h1>Летящие продукты в корзину</h1>
-      <div className="cart">🛒</div>
       {flyingProducts.map((product, i) => (
         <motion.img
           key={product.name}

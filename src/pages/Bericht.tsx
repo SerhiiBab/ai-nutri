@@ -1,5 +1,5 @@
 const Bericht = () => {
-  return <h1>Bericht</h1>;
+  return <h1></h1>;
 };
 
 export default Bericht;
