@@ -68,7 +68,7 @@ export default function HeroBild() {
             /*ease: [0.4, 0, 0.2, 1],*/
             type: "spring",
             stiffness: 50,
-            damping: 8,
+            damping: 7,
           }}
         />
       ))}
