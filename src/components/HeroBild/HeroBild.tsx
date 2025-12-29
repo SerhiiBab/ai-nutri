@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion"; 
-import milkImg from "../../assets/HeroBild/milk.jpg"; 
-import bananaImg from "../../assets/HeroBild/banana.jpg"; 
+import spaghettiImg from "../../assets/HeroBild/spaghetti.png"; 
+import teppichImg from "../../assets/HeroBild/teppich.jpg"; 
 import carrotImg from "../../assets/HeroBild/carrot.jpg"; 
 import nutsImg from "../../assets/HeroBild/nuts.jpg"; 
 import appleImg from "../../assets/HeroBild/apple.jpg"; 
@@ -13,16 +13,16 @@ type Product = {
 };
 
 const productsList: Product[] = [
-  { name: "Молоко", img: milkImg },
-  { name: "Банан", img: bananaImg },
+  { name: "teppich", img: teppichImg },
+  { name: "spaghetti", img: spaghettiImg },
   { name: "Морковь", img: carrotImg },
   { name: "Орехи", img: nutsImg },
   { name: "Яблоко", img: appleImg },
 ];
 
 const finalPositions = [
-  { x: 50, y: 400 },
-  { x: 150, y: 400 },
+  { x: 150, y: 100 },
+  { x: 170, y: 120 },
   { x: 250, y: 400 },
   { x: 350, y: 400 },
   { x: 450, y: 400 },
@@ -52,7 +52,7 @@ export default function HeroBild() {
           key={product.name}
           src={product.img}
           alt={product.name}
-          className="product"
+          className={`product ${product.name}`}
           initial={{
             x: Math.random() * 300,
             y: -100,

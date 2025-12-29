@@ -6,3 +6,12 @@
   position: absolute;
   width: 80px;
 }
+
+.spaghetti {
+    width: 400px;
+}
+
+.teppich {
+    width: 450px;
+    z-index: -1;
+}
