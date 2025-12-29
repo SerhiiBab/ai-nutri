@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion"; 
 import milkImg from "../../assets/HeroBild/milk.jpg"; 
 import bananaImg from "../../assets/HeroBild/banana.jpg"; 
@@ -7,8 +7,12 @@ import nutsImg from "../../assets/HeroBild/nuts.jpg";
 import appleImg from "../../assets/HeroBild/apple.jpg"; 
 import "./HeroBild.css"; 
 
+type Product = {
+  name: string;
+  img: string;
+};
 
-const productsList = [
+const productsList: Product[] = [
   { name: "Молоко", img: milkImg },
   { name: "Банан", img: bananaImg },
   { name: "Морковь", img: carrotImg },
@@ -24,21 +28,20 @@ const finalPositions = [
   { x: 450, y: 400 },
 ];
 
-// Переименуйте функцию
-export default function HeroBild() {  // Было Herobild
-  const [flyingProducts, setFlyingProducts] = useState([]);
-  const timeouts = useRef([]);  // Для очистки
+export default function HeroBild() {
+  const [flyingProducts, setFlyingProducts] = useState<Product[]>([]);
+  const timeouts = useRef<number[]>([]);
 
   useEffect(() => {
     productsList.forEach((p, index) => {
-      const timeout = setTimeout(() => {
+      const timeout = window.setTimeout(() => {
         setFlyingProducts((prev) => [...prev, p]);
       }, index * 500);
       timeouts.current.push(timeout);
     });
 
     return () => {
-      timeouts.current.forEach(clearTimeout);  // Очистка
+      timeouts.current.forEach(clearTimeout);
     };
   }, []);
 
@@ -48,7 +51,7 @@ export default function HeroBild() {  // Было Herobild
       <div className="cart">🛒</div>
       {flyingProducts.map((product, i) => (
         <motion.img
-          key={product.name}  // Лучше, чем i
+          key={product.name}
           src={product.img}
           alt={product.name}
           className="product"
@@ -58,7 +61,7 @@ export default function HeroBild() {  // Было Herobild
             scale: 1,
           }}
           animate={{
-            x: finalPositions[i]?.x || 0,  // Защита от undefined
+            x: finalPositions[i]?.x || 0,
             y: finalPositions[i]?.y || 0,
             scale: 1,
           }}
