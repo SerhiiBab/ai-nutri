@@ -34,7 +34,7 @@ export default function HeroBild() {
     productsList.forEach((p, index) => {
       const timeout = window.setTimeout(() => {
         setFlyingProducts((prev) => [...prev, p]);
-      }, index * 100);
+      }, index * 10);
       timeouts.current.push(timeout);
     });
 
