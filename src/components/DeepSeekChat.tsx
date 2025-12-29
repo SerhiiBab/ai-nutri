@@ -78,7 +78,7 @@ const DeepSeekChat = () => {
         {messages.map((m, i) => (
           <div key={i}>
             <b>{m.role === "user" ? "Ты" : "AI"}:</b>
-            <pre>{m.content}</pre>
+            <pre id="antwort">{m.content}</pre>
           </div>
         ))}
       </div>
