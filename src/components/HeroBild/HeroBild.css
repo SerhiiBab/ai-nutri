@@ -1,0 +1,9 @@
+.container {
+  position: relative;
+  min-height: 600px;
+}
+
+.product {
+  position: absolute;
+  width: 80px;
+}

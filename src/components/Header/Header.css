@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+.header {
+  padding: 16px 24px;
+  background: #fff;
+  color: white;
+  border-bottom: 1px solid #ededed;
+
+}
+
+.header--logomenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+
+.logo {
+  max-width: 3.4rem;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  color: #261F22;
+  text-decoration: none;
+  font-family: "Actor";
+  font-size: 1.1rem;
+}
+
+.nav a.active {
+  border-bottom: 2px solid #FC3A79;
+  color: #FC3A79;
+  
+}
+
+/* Burger */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: #261F22;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #111;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+}
