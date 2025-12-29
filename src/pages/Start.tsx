@@ -1,4 +1,5 @@
-import HeroBild from "../components/HeroBild/HeroBild";  // Исправлено
+import HeroBild from "../components/HeroBild/HeroBild";
+import DeepSeekChat from "../components/DeepSeekChat";
 
 const Start = () => {
   return (
@@ -11,6 +12,7 @@ const Start = () => {
       </div>
       <div>
         <HeroBild />
+        <DeepSeekChat />
       </div>
     </div>
   );
