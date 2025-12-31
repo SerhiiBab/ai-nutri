@@ -27,7 +27,7 @@ export const initGalleryGSAP = (galleryId: string) => {
         start: "center center",
         end: "+=100%",
         scrub: true,
-        pin: galleryElement.parentNode,
+        pin: galleryElement.parentNode instanceof HTMLElement ? galleryElement.parentNode : undefined,
       },
     });
 
