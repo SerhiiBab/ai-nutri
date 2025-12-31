@@ -1,11 +1,12 @@
-// Gallery.tsx
-import "./Gallery.css";
 import { useEffect } from "react";
+import { initGalleryGSAP } from "./gallery-gsap";
+import "./Gallery.css";
 import scanImg from "../assets/scanfood.jpg";
 
 export default function Gallery() {
   useEffect(() => {
-    import("./gallery-gsap");
+    const cleanup = initGalleryGSAP("gallery-8");
+    return () => cleanup?.();
   }, []);
 
   return (
