@@ -1,8 +1,10 @@
 import HeroBild from "../components/HeroBild/HeroBild";
 import AnimatedTextButton from "../components/AnimatedTextButton";
+import Gallery from "../components/Gallery";
 
 const Start = () => {
   return (
+    <>
     <div className="hero-block main-width flex">
       <div className="hero-block--text flex flex-col items-center justify-center max-w-1/2 gap-12">
         <div className="hero-block--text__1 text-[#FC3A79] text-2xl">
@@ -60,7 +62,10 @@ const Start = () => {
       <div className="hero-block--bild max-w-1/2">
         <HeroBild />
       </div>
+      
     </div>
+    <Gallery />
+    </>
   );
 };
 

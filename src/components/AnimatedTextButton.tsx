@@ -5,7 +5,7 @@ import SplitText from "gsap/SplitText";
 gsap.registerPlugin(SplitText);
 
 export default function AnimatedTextButton() {
-  const textRef = useRef<HTMLSpanElement | null>(null);
+  const textRef = useRef<HTMLDivElement>(null);
   const splitRef = useRef<SplitText | null>(null);
 
   useEffect(() => {
