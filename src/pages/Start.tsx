@@ -1,6 +1,5 @@
 import HeroBild from "../components/HeroBild/HeroBild";
 import AnimatedTextButton from "../components/AnimatedTextButton";
-import Gallery from "../components/Gallery";
 
 const Start = () => {
   return (
@@ -64,7 +63,6 @@ const Start = () => {
       </div>
       
     </div>
-    <Gallery />
     </>
   );
 };
