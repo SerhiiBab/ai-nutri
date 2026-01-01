@@ -1,5 +1,6 @@
 import HeroBild from "../components/HeroBild/HeroBild";
 import AnimatedTextButton from "../components/AnimatedTextButton";
+import Features from "../components/StartVorteile/StartVorteile";
 
 const Start = () => {
   return (
@@ -61,8 +62,8 @@ const Start = () => {
       <div className="hero-block--bild max-w-1/2">
         <HeroBild />
       </div>
-      
     </div>
+    <Features />
     </>
   );
 };
