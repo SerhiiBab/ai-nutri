@@ -76,18 +76,11 @@ const Slides = () => {
             <div className="flex items-center justify-center">
               <h1>Einfach</h1>
               <Rocket size={46} className="text-orange-500" />
+              
             </div>
+            <MealAnalysisBlock image1={""} image2={""} image3={""} />
             
 
-            <MealAnalysisBlock
-              images={{
-                main: "https://images.unsplash.com/photo-1535914254981-b5012eebbd15?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                topRight:
-                  "https://images.unsplash.com/photo-1535914254981-b5012eebbd15?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                bottomRight:
-                  "https://images.unsplash.com/photo-1535914254981-b5012eebbd15?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-              }}
-            />
           </div>
         </div>
       </section>
