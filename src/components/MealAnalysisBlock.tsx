@@ -7,9 +7,7 @@ type Props = {
 };
 
 const MealAnalysisBlock: React.FC<Props> = ({
-  image1,
-  image2,
-  image3,
+
 }) => {
   return (
     <section className="w-full flex justify-center px-4">

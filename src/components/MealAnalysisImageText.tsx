@@ -5,7 +5,7 @@ type Props = {
   text: string;
 };
 
-const MealAnalysisImageText: React.FC<Props> = ({ image, text }) => {
+const MealAnalysisImageText: React.FC<Props> = ({ }) => {
   return (
     <section className="w-full flex justify-center px-4">
       <div className="w-full max-w-[1280px]">
