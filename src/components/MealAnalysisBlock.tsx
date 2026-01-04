@@ -24,7 +24,7 @@ const MealAnalysisBlock: React.FC<Props> = ({ }) => {
 
               <div className="flex-1 rounded-xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={"image1"}
                   alt=""
                   className="w-100 h-[200px] object-cover"
                 />
@@ -41,7 +41,7 @@ const MealAnalysisBlock: React.FC<Props> = ({ }) => {
           {/* RIGHT IMAGE 3 */}
           <div className="flex-1 rounded-xl overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D}"
+              src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
               className="w-200 h-full object-cover"
             />
