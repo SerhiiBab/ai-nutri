@@ -1,17 +1,17 @@
 import HeroBild from "../components/HeroBild/HeroBild";
 import AnimatedTextButton from "../components/AnimatedTextButton";
-import Features from "../components/StartVorteile/StartVorteile";
+import Slides from "../components/Slides/Slides";
 
 const Start = () => {
   return (
     <>
     <div className="hero-block main-width flex">
       <div className="hero-block--text flex flex-col items-center justify-center max-w-1/2 gap-12">
-        <div className="hero-block--text__1 text-[#FC3A79] text-2xl">
+        <div className="hero-block--text__1 text-white text-2xl">
           Verstehe, was dein Körper wirklich bekommt
         </div>
         <AnimatedTextButton />
-        <div className="hero-block--text__3 text-xl text-center max-w-2/3">
+        <div className="hero-block--text__3 text-xl text-center text-white max-w-2/3">
           AI-Nutri analysiert deine tägliche Ernährung und zeigt dir, welche
           Vitamine fehlen – basierend auf deinen persönlichen Daten.
         </div>
@@ -63,7 +63,8 @@ const Start = () => {
         <HeroBild />
       </div>
     </div>
-    <Features />
+
+    <Slides  />
     </>
   );
 };

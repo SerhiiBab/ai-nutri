@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import spaghettiImg from "../../assets/HeroBild/spaghetti.png";
-import teppichImg from "../../assets/HeroBild/teppich.jpg";
+import teppichImg from "../../assets/HeroBild/teppich.png";
 import kiLogoImg from "../../assets/HeroBild/ki-logo.png";
 import "./HeroBild.css";
 

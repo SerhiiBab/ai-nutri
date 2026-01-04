@@ -29,7 +29,7 @@ export default function AnimatedTextButton() {
   }, []);
 
   return (
-    <div ref={textRef} className="hero-block--text__2 text-6xl text-center transition" id="words">
+    <div ref={textRef} className="hero-block--text__2 text-6xl text-black text-center transition" id="words">
           AI-gestützte <br />
           Ernährungsanalyse
     </div>

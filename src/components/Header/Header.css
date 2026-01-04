@@ -2,13 +2,16 @@
   font-family: "Inter", sans-serif;
 }
 
-
-
 .header {
   padding: 16px 24px;
-  background: #fff;
-  color: white;
-  border-bottom: 1px solid #ededed;
+    background: #ffffff00;
+    color: white;
+    border-bottom: 1px solid #ededed;
+    backdrop-filter: blur(8px);
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    top: 0px;
 
 }
 
@@ -45,8 +48,8 @@
 }
 
 .nav a.active {
-  background-color: #353535;
-  color: #fff;
+  background-color: #ffffff;
+  color: #261F22;
 }
 
 /* Burger */

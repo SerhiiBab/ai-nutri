@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-import logo from "../../assets/ai-nutri.jpg";
+import logo from "../../assets/ai-nutri.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
