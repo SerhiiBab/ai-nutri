@@ -24,7 +24,6 @@ AI-Nutri analysiert deine tägliche Ernährung und zeigt dir, welche Vitamine fe
      <div>
 
      </div>
-      <h1>Heute</h1>
       <DeepSeekChat />
 
     </div>
