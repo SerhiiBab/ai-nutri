@@ -9,7 +9,7 @@ interface Props {
 const PageWrapper: React.FC<Props> = ({ children }) => {
   return (
     <div className="" style={{ position: "relative", minHeight: "100vh", overflow: "hidden"}}>
-      {/* Анимированный SVG фон */}
+      {/* SVG */}
       <motion.svg
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
@@ -33,12 +33,12 @@ const PageWrapper: React.FC<Props> = ({ children }) => {
   width="100%"
   height="40%"
   fill="url(#grad)"
-  animate={{ y: "40%" }} // просто смещение один раз
-  transition={{ duration: 0.5, ease: "easeInOut" }} // плавное замедление в начале и в конце
+  animate={{ y: "40%" }} 
+  transition={{ duration: 0.5, ease: "easeInOut" }}
 />
       </motion.svg>
 
-      {/* Содержимое страницы */}
+      {/* Seite */}
       <div style={{ position: "relative", zIndex: 1 }}>
         {children}
       </div>

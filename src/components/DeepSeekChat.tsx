@@ -59,7 +59,7 @@ const DeepSeekChat = () => {
   return (
     <div className="absolute bg-white flex flex-col" style={{ maxWidth: 600 }}>
       <textarea
-        placeholder="Введите текст"
+        placeholder="Essen..."
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
@@ -71,7 +71,7 @@ const DeepSeekChat = () => {
       />*/}
 
       <button onClick={send} disabled={loading}>
-        {loading ? "Обработка..." : "Rechnen"}
+        {loading ? "Analysieren..." : "Rechnen"}
       </button>
 
       <div>
