@@ -57,7 +57,7 @@ const DeepSeekChat = () => {
   };
 
   return (
-    <div style={{ maxWidth: 600 }}>
+    <div className="absolute bg-white flex" style={{ maxWidth: 600 }}>
       <textarea
         placeholder="Введите текст"
         value={text}
@@ -71,7 +71,7 @@ const DeepSeekChat = () => {
       />*/}
 
       <button onClick={send} disabled={loading}>
-        {loading ? "Обработка..." : "Отправить"}
+        {loading ? "Обработка..." : "Rechnen"}
       </button>
 
       <div>

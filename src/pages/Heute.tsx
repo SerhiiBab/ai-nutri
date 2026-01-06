@@ -1,35 +1,27 @@
 import DeepSeekChat from "../components/DeepSeekChat";
 import FoodGrid from "../components/FoodGrid/FoodGrid";
-import PageWrapper from "../components/PageWrapper";
 
 const Heute = () => {
   return (
-    <PageWrapper>
     <div>
-     <div>
-        <div>
+    <div className="w-full flex justify-center">
+    <div className="max-w-lg flex">
+     <div className="text-red">
+        <div className="text-white">
             Verstehe, was dein Körper wirklich bekommt
         </div>
         <div>
-           AI-gestützte 
-Ernährungsanalyse
-        </div>
-        <div>
-AI-Nutri analysiert deine tägliche Ernährung und zeigt dir, welche Vitamine fehlen – basierend auf deinen persönlichen Daten.
-        </div>
-        <div>
-
+KI-Nutri analysiert deine tägliche Ernährung und zeigt dir, wie viele Kalorien, Proteine, Fette und Kohlenhydrate du zu dir nimmst.
         </div>
      </div>
-     <div>
 
-     </div>
       <DeepSeekChat />
 
     </div>
-    <FoodGrid />
-</PageWrapper>
+    </div>
 
+<FoodGrid />
+</div>
   )
 
 };
