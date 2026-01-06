@@ -57,9 +57,10 @@ const DeepSeekChat = () => {
   };
 
   return (
-    <div className="absolute bg-white flex flex-col" style={{ maxWidth: 600 }}>
+    <div className="absolute bg-[#ebebeb] flex flex-col min-w-xl max-md:min-w-90 top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
       <textarea
-  placeholder="Essen..."
+      style={{backgroundColor:"#ad4b4bff", padding:"10px", color:"white"}}
+  placeholder="2 Mandarinen und 100g Yoghurt..."
   value={text}
   onChange={(e) => setText(e.target.value)}
   onKeyDown={(e) => {
