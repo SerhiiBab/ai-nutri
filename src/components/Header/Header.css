@@ -79,7 +79,7 @@
     top: 64px;
     left: 0;
     right: 0;
-    background: #111;
+    background: #8C6765;
     flex-direction: column;
     align-items: center;
     display: none;
@@ -89,4 +89,16 @@
   .nav.open {
     display: flex;
   }
+
+  .nav a {
+  background-color: #ab1b1b00;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+  .nav a.active {
+  background-color: #ab1b1b00;
+  color: #ff6900;
+  font-size: 24px;
+}
 }
