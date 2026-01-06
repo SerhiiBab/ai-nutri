@@ -22,7 +22,6 @@ Kohlenhydrate - (число g)
 Fette - (число g)
 Proteine - (число g)
 Kalorien - (число kkal).
-essenhinzuf
 `;
 
     const messages: any[] = [
