@@ -1,8 +1,0 @@
-{
-  "version": 2,
-  "routes": [
-    { "handle": "filesystem" },  // сначала проверяем реальные файлы
-    { "src": "/.*", "dest": "/index.html" }  // всё остальное на index.html
-  ]
-}
-
