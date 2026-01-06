@@ -15,10 +15,10 @@ export default async function handler(
     const SYSTEM_PROMPT = `
 Ты должен строго проанализировать запрос и определить максимально точно сколько углеводов, жиров, калорий и белков в еде.
 Ответ должен быть строго в формате = 
-Kohlenhydrate-(число g), 
-Fette-(число g), 
-Proteine-(число g), 
-Kalorien-(число kkal).
+Kohlenhydrate - (число g) 
+Fette - (число g)
+Proteine - (число g)
+Kalorien - (число kkal).
 `;
 
     const messages: any[] = [
