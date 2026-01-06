@@ -5,13 +5,13 @@ import Slides from "../components/Slides/Slides";
 const Start = () => {
   return (
     <>
-    <div className="hero-block main-width flex">
-      <div className="hero-block--text flex flex-col items-center justify-center max-w-1/2 gap-12">
-        <div className="hero-block--text__1 text-white text-2xl">
+    <div className="hero-block main-width flex max-xl:justify-center ">
+      <div className="hero-block--text flex flex-col items-center justify-center max-w-1/2 gap-12 max-xl:max-w-9/10">
+        <div className="hero-block--text__1 text-white text-2xl text-center">
           Verstehe, was dein Körper wirklich bekommt
         </div>
         <AnimatedTextButton />
-        <div className="hero-block--text__3 text-xl text-center text-white max-w-2/3">
+        <div className="hero-block--text__3 text-xl text-center text-white max-w-2/3 max-xl:max-w-9/10">
           AI-Nutri analysiert deine tägliche Ernährung und zeigt dir, welche
           Vitamine fehlen – basierend auf deinen persönlichen Daten.
         </div>

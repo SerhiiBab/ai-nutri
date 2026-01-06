@@ -44,7 +44,7 @@ export default function HeroBild() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container max-xl:hidden">
       {flyingProducts.map((product, i) => (
         <motion.img
           key={product.name}
