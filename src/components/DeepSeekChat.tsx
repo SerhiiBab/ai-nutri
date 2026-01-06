@@ -57,7 +57,7 @@ const DeepSeekChat = () => {
   };
 
   return (
-    <div className="absolute bg-white flex" style={{ maxWidth: 600 }}>
+    <div className="absolute bg-white flex flex-col" style={{ maxWidth: 600 }}>
       <textarea
         placeholder="Введите текст"
         value={text}
