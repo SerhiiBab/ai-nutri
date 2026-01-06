@@ -59,10 +59,18 @@ const DeepSeekChat = () => {
   return (
     <div className="absolute bg-white flex flex-col" style={{ maxWidth: 600 }}>
       <textarea
-        placeholder="Essen..."
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-      />
+  placeholder="Essen..."
+  value={text}
+  onChange={(e) => setText(e.target.value)}
+  onKeyDown={(e) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault(); // не добавлять новую строку
+      if (!loading) {
+        send();
+      }
+    }
+  }}
+/>
 
       {/*<input
         type="file"
