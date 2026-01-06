@@ -64,11 +64,11 @@ const DeepSeekChat = () => {
         onChange={(e) => setText(e.target.value)}
       />
 
-      <input
+      {/*<input
         type="file"
         accept="image/*"
         onChange={(e) => setImage(e.target.files?.[0] || null)}
-      />
+      />*/}
 
       <button onClick={send} disabled={loading}>
         {loading ? "Обработка..." : "Отправить"}
