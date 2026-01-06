@@ -24,9 +24,8 @@ const PageWrapper: React.FC<Props> = ({ children }) => {
       >
         <defs>
           <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#ebebeb" />
-            <stop offset="50%" stopColor="#ebebeb" />
-            <stop offset="100%" stopColor="#ebebeb" />
+            <stop offset="0%" stopColor="#cbcbcbff" />
+            <stop offset="100%" stopColor="#5f5f5fff" />
           </linearGradient>
         </defs>
         <motion.rect

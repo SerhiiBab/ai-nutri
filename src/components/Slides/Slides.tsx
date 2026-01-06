@@ -10,8 +10,8 @@ const Slides = () => {
     <div className="slides-wrapper">
       <section className="section section-1 max-xl:mt-20">
         <div className="section-content bg-[#8C6765] w-full pt-20 pb-30">
-          <div className="section-inner flex max-w-[1280px] gap-10 max-xl:flex-col">
-            <section className="w-full flex justify-center px-4">
+          <div className="section-inner flex max-w-[1280px] gap-10 max-xl:flex-col max-xl:items-center">
+            <section className="w-full flex justify-center px-4 max-xl:w-[350px]">
               <div className="w-full max-w-[1280px] max-xl:justify-center max-xl:flex">
                 <div className="flex flex-col lg:flex-row gap-6">
                   <div className="flex flex-col gap-6 flex-1 justify-center">
@@ -30,7 +30,7 @@ const Slides = () => {
                         <img
                           src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                           alt=""
-                          className="w-200 h-60 object-cover max-xl:w-full"
+                          className="w-200 h-60 object-cover max-xl:full"
                         />
                       </div>
                     </div>
@@ -38,7 +38,7 @@ const Slides = () => {
                 </div>
               </div>
             </section>
-            <section className="w-full flex justify-center px-4">
+            <section className="w-full flex justify-center px-4 max-xl:w-[350px]">
               <div className="w-full max-w-[1280px] max-xl:justify-center max-xl:flex">
                 <div className="flex flex-col lg:flex-row gap-6">
                   <div className="flex flex-col gap-6 flex-1 justify-center">
@@ -65,7 +65,7 @@ const Slides = () => {
                 </div>
               </div>
             </section>
-            <section className="w-full flex justify-center px-4">
+            <section className="w-full flex justify-center px-4 max-xl:w-[350px]">
               <div className="w-full max-w-[1280px] max-xl:justify-center max-xl:flex">
                 <div className="flex flex-col lg:flex-row gap-6">
                   <div className="flex flex-col gap-6 flex-1 justify-center">

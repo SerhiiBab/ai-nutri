@@ -1,5 +1,5 @@
 import DeepSeekChat from "../components/DeepSeekChat";
-import FoodGrid from "../components/FoodGrid";
+import FoodGrid from "../components/FoodGrid/FoodGrid";
 import PageWrapper from "../components/PageWrapper";
 
 const Heute = () => {
