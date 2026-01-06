@@ -83,7 +83,7 @@ const DeepSeekChat = () => {
         {loading ? "Analysieren..." : "Rechnen"}
       </button>
 
-      <div>
+      <div style={{padding:"10px"}}>
         {messages.map((m, i) => (
           <div key={i}>
             <b>{m.role === "user" ? "Essen" : "KI Analyse"}:</b>
