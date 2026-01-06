@@ -13,7 +13,7 @@ const Header = () => {
 
       <nav className={`nav ${open ? "open" : ""}`}>
         <NavLink to="/" onClick={() => setOpen(false)}>Start</NavLink>
-        <NavLink to="/heute" onClick={() => setOpen(false)}>Heute</NavLink>
+        <NavLink to="/heute" onClick={() => setOpen(false)}>Analyse</NavLink>
         <NavLink to="/bericht" onClick={() => setOpen(false)}>Bericht</NavLink>
       </nav>
 

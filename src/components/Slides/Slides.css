@@ -3,31 +3,22 @@ p {
     font-size: 20px;
 }
 
-.slides-wrapper {
-
-}
-
 .section {
-  width: 100%;
-  height: calc(100vh - 64px);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
-  margin-top: -600px;
 }
 
 .section-inner {
   height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
 }
 
  .section-inner {
   height: auto;
-  padding-bottom: 5vh;
   width: 100vw;
 }
 
@@ -40,8 +31,7 @@ p {
 }
 
 .section h1 {
-  font-size: 60px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  font-size: 30px;
   color: #fff;
+  margin-right: 10px;
 }
