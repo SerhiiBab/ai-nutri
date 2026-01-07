@@ -1,9 +1,13 @@
-export default function FoodGrid() {
+type FoodGridProps = {
+  onAddFood: () => void;
+};
+
+const FoodGrid: React.FC<FoodGridProps> = ({ onAddFood }) => {
   return (
     <section className="w-full min-h-screen bg-[#eef3ea00] py-16">
       {/* Button */}
       <div className="flex justify-center mb-12">
-        <button className="flex items-center gap-2 bg-[#2fa0d4] text-white text-2xl font-semibold px-10 py-4 rounded-sm shadow-md hover:opacity-90 transition">
+        <button onClick={onAddFood} className="essenhinzu flex items-center gap-2 bg-[#2fa0d4] text-white text-2xl font-semibold px-10 py-4 rounded-sm shadow-md hover:opacity-90 transition">
           <span className="text-3xl leading-none">+</span>
           Essen
         </button>
@@ -70,3 +74,5 @@ export default function FoodGrid() {
     </section>
   );
 }
+
+export default FoodGrid;

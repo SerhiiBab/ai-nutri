@@ -5,7 +5,12 @@ type Message = {
   content: string;
 };
 
-const DeepSeekChat = () => {
+type DeepSeekChatProps = {
+  isOpen: boolean;
+  onClose: () => void;
+};
+
+const DeepSeekChat: React.FC<DeepSeekChatProps> = ({ isOpen, onClose }) => {
   const [text, setText] = useState("");
   const [image, setImage] = useState<File | null>(null);
   const [messages, setMessages] = useState<Message[]>([]);
@@ -56,8 +61,19 @@ const DeepSeekChat = () => {
     setLoading(false);
   };
 
+   if (!isOpen) return null;
+
   return (
-    <div className="absolute bg-[#ebebeb] flex flex-col min-w-xl max-md:min-w-90 top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
+    <div className="kichat absolute z-9 bg-[#ebebeb] flex flex-col min-w-xl max-md:min-w-90 top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <button
+      onClick={onClose}
+      className="absolute top-2 right-2 text-xl font-bold"
+      aria-label="Close chat"
+    >
+      ✕
+    </button>
+      
+      
       <textarea
       style={{backgroundColor:"#ad4b4bff", padding:"10px", color:"white"}}
   placeholder="2 Mandarinen und 100g Yoghurt..."
