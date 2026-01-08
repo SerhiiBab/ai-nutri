@@ -1,6 +1,47 @@
+import { Wheat, Beef, Droplets, Flame } from "lucide-react";
+
 type FoodGridProps = {
   onAddFood: () => void;
 };
+
+type StatItem = {
+  title: string;
+  value: number;
+  unit: string;
+  color: string;
+  icon: React.ReactNode;
+};
+
+const stats: StatItem[] = [
+  {
+    title: "Kohlenhydrate",
+    value: 142,
+    unit: "g",
+    color: "emerald",
+    icon: <Wheat className="w-5 h-5 text-emerald-600" />,
+  },
+  {
+    title: "Protein",
+    value: 81,
+    unit: "g",
+    color: "blue",
+    icon: <Beef className="w-5 h-5 text-blue-600" />,
+  },
+  {
+    title: "Fette",
+    value: 39,
+    unit: "g",
+    color: "yellow",
+    icon: <Droplets className="w-5 h-5 text-yellow-600" />,
+  },
+  {
+    title: "Kalorien",
+    value: 1320,
+    unit: "kcal",
+    color: "orange",
+    icon: <Flame className="w-5 h-5 text-orange-600" />,
+  },
+];
 
 const FoodGrid: React.FC<FoodGridProps> = ({ onAddFood }) => {
   return (
@@ -11,66 +52,41 @@ const FoodGrid: React.FC<FoodGridProps> = ({ onAddFood }) => {
           <span className="text-3xl leading-none">+</span>
           Essen
         </button>
-      </div>
+      </div>    
 
-      {/* Grid */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-12 px-6">
-        <div className="bg-[#b9cfa8] rounded-2xl px-8 py-10 text-center">
-          {/* Icon */}
-          <div className="flex justify-center mb-4">
-            <div className="w-12 h-12 flex items-center justify-center text-white text-6xl">
-              0
+
+<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 bg-[#248f590d]">
+      {stats.map((stat) => (
+        <div
+          key={stat.title}
+          className="bg-white rounded-2xl p-6 shadow-sm border-border/50 hover:shadow-md transition-shadow duration-200"
+        >
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-sm font-medium text-muted-foreground">
+              {stat.title}
+            </h3>
+
+            <div
+              className={`p-2 rounded-xl bg-${stat.color}-600 bg-opacity-10`}
+            >
+              {stat.icon}
             </div>
           </div>
 
-          {/* Title */}
-          <h3 className="text-white text-3xl font-extrabold leading-tight">
-            Kalorien <br /> (kcal)
-          </h3>
-        </div>
-
-        <div className="bg-[#b9cfa8] rounded-2xl px-8 py-10 text-center">
-          {/* Icon */}
-          <div className="flex justify-center mb-4">
-            <div className="w-12 h-12 flex items-center justify-center text-white text-6xl">
-              0
-            </div>
+          <div className="flex items-baseline">
+            <span className="text-3xl font-bold text-foreground">
+              {stat.value}
+            </span>
+            <span className="ml-1 text-sm text-muted-foreground">
+              {stat.unit}
+            </span>
           </div>
-
-          {/* Title */}
-          <h3 className="text-white text-3xl font-extrabold leading-tight">
-            Proteine <br /> (g)
-          </h3>
         </div>
-
-        <div className="bg-[#b9cfa8] rounded-2xl px-8 py-10 text-center">
-          {/* Icon */}
-          <div className="flex justify-center mb-4">
-            <div className="w-12 h-12 flex items-center justify-center text-white text-6xl">
-              0
-            </div>
-          </div>
-
-          {/* Title */}
-          <h3 className="text-white text-3xl font-extrabold leading-tight">
-            Fette <br /> (g)
-          </h3>
-        </div>
-
-        <div className="bg-[#8C6765] rounded-2xl px-8 py-10 text-center">
-          {/* Icon */}
-          <div className="flex justify-center mb-4">
-            <div className="w-12 h-12 flex items-center justify-center text-white text-6xl">
-              0
-            </div>
-          </div>
-
-          {/* Title */}
-          <h3 className="text-white text-3xl font-extrabold leading-tight">
-            Kohlenhydrate <br /> (g)
-          </h3>
-        </div>
-      </div>
+        
+      ))}
+    </div>
+    </div>
     </section>
   );
 }
