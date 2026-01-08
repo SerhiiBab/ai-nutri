@@ -18,28 +18,28 @@ const stats: StatItem[] = [
     value: 142,
     unit: "g",
     color: "emerald",
-    icon: <Wheat className="w-5 h-5 text-emerald-600" />,
+    icon: <Wheat className="w-8 h-8 text-emerald-600" />,
   },
   {
     title: "Protein",
     value: 81,
     unit: "g",
     color: "blue",
-    icon: <Beef className="w-5 h-5 text-blue-600" />,
+    icon: <Beef className="w-8 h-8 text-blue-600" />,
   },
   {
     title: "Fette",
     value: 39,
     unit: "g",
     color: "yellow",
-    icon: <Droplets className="w-5 h-5 text-yellow-600" />,
+    icon: <Droplets className="w-8 h-8 text-yellow-600" />,
   },
   {
     title: "Kalorien",
     value: 1320,
     unit: "kcal",
     color: "orange",
-    icon: <Flame className="w-5 h-5 text-orange-600" />,
+    icon: <Flame className="w-8 h-8 text-orange-600" />,
   },
 ];
 
