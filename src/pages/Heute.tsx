@@ -1,7 +1,7 @@
 import { useState } from "react";
 import DeepSeekChat from "../components/DeepSeekChat";
 import FoodGrid from "../components/FoodGrid/FoodGrid";
-
+import AnalyseBlock from "../components/AnalyseBlock";
 
 const Heute: React.FC = () => {
   const [chatOpen, setChatOpen] = useState<boolean>(false);
@@ -30,6 +30,7 @@ const Heute: React.FC = () => {
       </div>
 
       <FoodGrid onAddFood={() => setChatOpen(true)} />
+        <AnalyseBlock />
         
       
     </div>
