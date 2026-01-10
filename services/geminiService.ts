@@ -1,5 +1,5 @@
 // ./services/geminiService.ts
-import { NutritionData } from "../types";
+import type { NutritionData } from "../types";
 
 export async function parseMealDescription(description: string): Promise<NutritionData[]> {
   const res = await fetch("/api/parseMeal", {
